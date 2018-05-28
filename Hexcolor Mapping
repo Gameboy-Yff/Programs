@@ -1,4 +1,4 @@
-// Made with Proscessing.
+// Made with Processing.
 PrintWriter output; 
 
 PFont f;  
