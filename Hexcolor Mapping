@@ -1,0 +1,139 @@
+PrintWriter output; 
+
+PFont f;  
+
+ 
+
+void setup() { 
+
+   
+
+  size(400,400); 
+
+  f = createFont("Arial",16,true); // STEP 2 Create Font 
+
+ 
+
+ 
+
+  output = createWriter("positions.txt");  
+
+} 
+
+ 
+
+ 
+
+void draw() { 
+
+  background(255); 
+
+  textFont(f,16);                  // STEP 3 Specify font to be used 
+
+  fill(255,0,140);  
+
+  text("",10,100);   // STEP 5 Display Text 
+
+} 
+
+ 
+
+ 
+
+void keyPressed() { 
+
+  if (key == 'b'){ 
+
+  output.print("'b',"); 
+
+   print("B "); 
+
+   text("Hello Strings!",100,100); 
+
+  } 
+
+  if (key == 'g'){ 
+
+  output.print("'g',"); 
+
+   print("G "); 
+
+  } 
+
+  if (key == 'y'){ 
+
+  output.print("'y',"); 
+
+  print("Y "); 
+
+  } 
+
+  if (key == 'r'){ 
+
+  output.print("'r',"); 
+
+   print("R "); 
+
+  } 
+
+  if (key == 'o'){ 
+
+  output.print("'o',"); 
+
+   print("O "); 
+
+  } 
+
+  if (key == 'l'){ 
+
+  output.print("'l',"); 
+
+   print("P ");  
+
+   fill(255,0,140); 
+
+ 
+
+  }  
+
+    if (key == 'h'){ 
+
+  output.print("'w',"); fill(255,0,140); 
+
+   print("H "); 
+
+    
+
+  }  
+
+ 
+
+    if (key == 'n'){ 
+
+  output.println(" "); 
+
+   println(" "); 
+
+  }  
+
+ 
+
+  if (key == 'u'){ 
+
+   
+
+  output.flush();  
+
+  output.close();  
+
+  exit();  
+
+} 
+
+} 
+
+ 
+
+  
+
+ 
